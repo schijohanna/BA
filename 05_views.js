@@ -49,17 +49,16 @@ const textbox_input_instructions = magpieViews.view_generator("instructions", {
   buttonText: 'proceed to main trials'
 });
 
-//instructions before conjunction condition
-const image_selection_instructions = magpieViews.view_generator("instructions", {
+const forced_choice_2A_instructions = magpieViews.view_generator("instructions", {
   trials: 1,
-  name: 'instructions_conjunction_1',
+  name: 'instructions_conjunction_2',
   title: 'Instructions',
   text: `The target you are supposed to find is a green T.
   Again, if you detect the target "green T" press L, otherwise press S.`,
   buttonText: 'proceed to trials'
 });
 
-const forced_choice_instructions = magpieViews.view_generator("instructions", {
+const forced_choice_3A_instructions = magpieViews.view_generator("instructions", {
   trials: 1,
   name: 'instructions_conjunction_2',
   title: 'Instructions',
@@ -113,14 +112,25 @@ const thanks = magpieViews.view_generator("thanks", {
   prolificConfirmText: 'Press the button'
 });
 
-const forced_choice_3A = magpieViews.view_generator("forced_choice", {
-  // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
-  trials:,
-  // name should be identical to the variable name
-  name: 'forced_choice_2A',
-  data: _.shuffle(forced_choice_trials.forced_choice),
-  // you can add custom functions at different stages through a view's life cycle
-  // hook: {
-  //     after_response_enabled: check_response
-  // }
+
+const filler_sentences = magpieViews.view_generator('textbox_input', {
+  trials: 36,
+  name: 'filler sentences',
+  title: 'Think of a name to put into the white box!',
+  min_chars: 2,
+  data: _.shuffle(textbox_input_trials.textbox_input)
+  }
+);
+
+const forced_choice_2A = magpieViews.view_generator('forced_choice', {
+  trails: 36,
+  name: "blablabla",
+  data: anser_container_generator.textbox_input,
+});
+
+
+const forced_choice_3A = custom_views.multi_choice_customized({
+  trails: 36 ,
+  name: "Stereotype Check" ,
+  data: forced_choice_3A_trials.multi_choice_customized,
 });

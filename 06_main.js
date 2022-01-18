@@ -10,12 +10,9 @@
 
 //assign participants randomly
 
-const mapping = _.sample(["GroupA", "GroupB"]);
 
 //different view sequence depending on group assignment
 //GroupA:
-
-if(mapping == "GroupA"){
 
 $("document").ready(function() {
     // prevent scrolling when space is pressed
@@ -78,9 +75,7 @@ $("document").ready(function() {
         }
     });
 });
-}
 
-else{
 
   $("document").ready(function() {
     // prevent scrolling when space is pressed
@@ -144,5 +139,3 @@ else{
         }
     });
 });
-
-}
