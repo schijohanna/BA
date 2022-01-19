@@ -125,7 +125,7 @@ const filler_sentences = magpieViews.view_generator('textbox_input', {
 const forced_choice_2A = magpieViews.view_generator('forced_choice', {
   trails: 36,
   name: "blablabla",
-  data: anser_container_generator.textbox_input,
+  data: answer_container_generator.textbox_input,
 });
 
 
