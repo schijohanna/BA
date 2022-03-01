@@ -25,7 +25,7 @@ const intro = magpieViews.view_generator("intro", {
   Vielen Dank, dass Sie sich dazu entschieden haben, an unserem Experiment teilzunehmen und auf diese
   Weise das Projekt für unsere Bachelorarbeit zu unterstützen.
   <br />
-  Bitte beachten Sie bitte, dass eine Teilnahme nur unter folgenden Bedingungen möglich ist:
+  Bitte beachten Sie, dass eine Teilnahme nur unter folgenden Bedingungen möglich ist:
   <br />
   - Das Gerät, auf dem Sie arbeiten verfügt über eine stabile Internetverbindung.
   - Sie haben ausreichend Zeit, um das Experiment vollständig zu bearbeiten (ca. 30 Minuten).
@@ -79,9 +79,9 @@ const forced_choice_2A_instructions = magpieViews.view_generator("instructions",
   title: 'Instruktionen',
   text: `Gratulation, der erste Teil des Experiments ist geschafft. Im zweiten Teil des Experiments sind Sie nun
   dazu aufgefordert, sich erneut mit den von Ihnen gewählten Namen aus der ersten Phase zu befassen.
-  Genauer gesagt, ist es Ihre Aufgabe, zu urteilen, ob die gewählten Namen für Sie persönlich eher weibliche oder
-  männliche Individuen beschreiben. Dafür werden Ihnen die Namen einzeln präsentiert und Ihre Aufgabe ist es, den
-  eingeblendeten Namen in eine der durch Felder markierten Kategorien "weiblich" pder "männlich" einzuordnen.
+  Genauer gesagt, ist es Ihre Aufgabe, zu beurteilen, ob die gewählten Namen für Sie persönlich eher weibliche oder
+  männliche Individuen beschreiben. Dafür werden Ihnen die Namen einzeln präsentiert und sie sollen den
+  eingeblendeten Namen in eine der durch Felder markierten Kategorien "weiblich" oder "männlich" einordnen.
   Falls ein Name beiden Geschlechtern zugeordnet werden kann, lassen Sie Ihr Bauchgefühl entscheiden.
   <br />
   Wenn Sie bereit sind, betätigen Sie den "Mit der zweiten Phase beginnen"-Button.`,
