@@ -214,6 +214,34 @@ const forced_choice_3A = magpieViews.view_generator(
     }
     }
 );
+// The answer container dict contains a generator function for every view type we support
+// The generator gets the config dict and CT as input and will generate the magpie-view-answer-container HTML code
+// (Some answer container elements should be the same, e.g. slider rating and SPR-slider rating)
+// In the post test questionnaire you can ask your participants addtional questions
+const post_test = magpieViews.view_generator("post_test", {
+  trials: 1,
+  name: 'post_test',
+  title: 'Zusätzliche Informationen',
+  text: ' Großartig, Sie sind beinahe am Ende. Im allerletzten Schritt, bitten wir Sie darum, die folgenden Fragen zu beantworten.',
+
+  // You can change much of what appears here, e.g., to present it in a different language, as follows:
+   buttonText: 'Weiter',
+   age_question: 'Alter',
+   gender_question: 'Geschlecht',
+   gender_male: 'männlich',
+   gender_female: 'weiblich',
+   gender_other: 'divers',
+   edu_question: 'Höchster Bildungsabschluss',
+   edu_graduated_high_school: 'Abitur',
+   edu_graduated_college: 'Hochschulabschluss',
+   edu_higher_degree: 'Universitärer Abschluss',
+   languages_question: 'Muttersprache',
+   languages_more: '(in der Regel die Sprache, die Sie als Kind zu Hause gesprochen haben)',
+   comments_question: 'Weitere Kommentare'
+}
+{
+
+});
 
 // There are many more templates available:
 // forced_choice, slider_rating, dropdown_choice, testbox_input, rating_scale, image_selection, sentence_choice,
